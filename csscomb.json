@@ -9,7 +9,7 @@
 	"color-case": "lower",
 	"color-shorthand": false,
 	"element-case": "lower",
-	"eof-newline": true,
+	"eof-newline": false,
 	"leading-zero": true,
 	"quotes": "single",
 	"remove-empty-rulesets": false,
@@ -232,6 +232,7 @@
 			"font-emphasize-position",
 			"font-emphasize-style",
 			"font-smooth",
+			"font-feature-settings",
 			"line-height"
 		]
 	]
