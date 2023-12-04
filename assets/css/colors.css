@@ -1,6 +1,12 @@
 :root {
   --neutral-black: #000000;
   --neutral-dark: #1d1e25;
+  --neutral-less-dark: #35373d;
   --neutral-grey: #7e8492;
+  --neutral-less-light: #ced1d8;
+  --neutral-light: #f5f5f5;
   --neutral-white: #ffffff;
+
+  --focus-outline: #2f80ed;
+  --error: #eb5757;
 }
