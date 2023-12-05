@@ -9,7 +9,7 @@ enum Type {
 /** Визальный вариант кнопки */
 enum Variant {
   regular = 'regular',
-  round = 'regular',
+  round = 'round',
 }
 
 /** Типы пропсов */
@@ -86,7 +86,7 @@ const buttonClass = computed(() => {
     padding: 0 16px;
     border-radius: 36px;
     font-size: 12px;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 36px;
   }
 
