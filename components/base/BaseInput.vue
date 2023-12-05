@@ -8,7 +8,7 @@ interface Props {
   /** Тип поля */
   type?: string;
   /** Значение поля */
-  modelValue: string;
+  modelValue?: string;
   /** Текст подписи */
   labelText?: string;
   /** Текст ошибки */
@@ -26,9 +26,9 @@ interface Props {
   /** Показать ли ошибку */
   isErrorShown?: boolean;
   /** Внешние CSS-классы подписи */
-  labelOuterClass: string;
+  labelOuterClass?: string;
   /** Внешние CSS-классы поля ввода */
-  inputOuterClass: string;
+  inputOuterClass?: string;
 }
 
 /** Пропсы со значениями по умолчанию */
