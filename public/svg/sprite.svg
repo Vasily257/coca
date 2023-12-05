@@ -1,0 +1,14 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 9" id="arrow-up">
+    <g stroke="#60D39C" stroke-linecap="round" stroke-width="1.603">
+      <path stroke-linejoin="round" d="M1.13379 3.93123L4.14027 0.924744L7.14676 3.93123"></path>
+      <path d="M4.14062 8.1403L4.14062 0.924744"></path>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 9 9" id="arrow-down">
+    <g stroke="#E35454" stroke-linecap="round" stroke-width="1.603">
+      <path stroke-linejoin="round" d="M1.21757 5.10773L4.20171 8.13636L7.23038 5.15219"></path>
+      <path d="M4.25558 0.920989L4.20215 8.13635"></path>
+    </g>
+  </symbol>
+</svg>
