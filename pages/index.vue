@@ -1,16 +1,14 @@
-<template>
-  <h1 class="home__title">Digitally forward creative</h1>
-</template>
+<script setup>
+import HomeMain from '~/components/blocks/HomeMain.vue';
+import HomeData from '~/components/blocks/HomeData.vue';
 
-<style lang="scss">
-.home {
-  &__title {
-    letter-spacing: -3px;
-    color: var(--neutral-dark, #1d1e25);
-    font-size: 80px;
-    font-weight: 700;
-    font-feature-settings: 'calt' off;
-    line-height: 1.2;
-  }
-}
-</style>
+/** Путь к svg-спрайту */
+const svgSpritePath = 'svg/sprite.svg';
+</script>
+
+<template>
+  <div>
+    <HomeMain :svg-sprite-path="svgSpritePath" />
+    <HomeData :svg-sprite-path="svgSpritePath" />
+  </div>
+</template>
