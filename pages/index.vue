@@ -2,13 +2,12 @@
 import HomeMain from '~/components/blocks/HomeMain.vue';
 import HomeData from '~/components/blocks/HomeData.vue';
 
-/** Путь к svg-спрайту */
-const svgSpritePath = 'svg/sprite.svg';
+const { svg } = useAppConfig();
 </script>
 
 <template>
   <div>
-    <HomeMain :svg-sprite-path="svgSpritePath" />
-    <HomeData :svg-sprite-path="svgSpritePath" />
+    <HomeMain :svg-sprite-path="svg.spritePath" />
+    <HomeData :svg-sprite-path="svg.spritePath" />
   </div>
 </template>
