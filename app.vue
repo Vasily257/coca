@@ -1,7 +1,10 @@
 <template>
-  <main class="main">
-    <NuxtPage />
-  </main>
+  <div>
+    <TheHeader />
+    <main class="main">
+      <NuxtPage />
+    </main>
+  </div>
 </template>
 
 <style lang="scss" scoped>
