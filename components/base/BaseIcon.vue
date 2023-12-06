@@ -16,11 +16,7 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <svg
-    class="icon"
-    :aria-hidden="ariaHidden"
-    role="img"
-  >
+  <svg class="icon" :aria-hidden="ariaHidden" role="img">
     <use :xlink:href="`${spritePath}#${iconName}`" />
   </svg>
 </template>
