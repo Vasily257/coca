@@ -33,10 +33,15 @@ interface Props {
 
 /** Пропсы со значениями по умолчанию */
 const props = withDefaults(defineProps<Props>(), {
+  name: '',
   type: 'text',
   modelValue: '',
   labelText: '',
   errorText: '',
+  placeholder: '',
+  autocomplete: '',
+  pattern: '',
+  isRequired: false,
   isLabelVisuallyHidden: true,
   isErrorShown: false,
   labelOuterClass: '',
