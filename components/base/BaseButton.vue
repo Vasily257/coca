@@ -1,31 +1,18 @@
 <script setup lang="ts">
-/** Тип кнопки */
-enum Type {
-  submit = 'submit',
-  button = 'button',
-  reset = 'reset',
-}
-
-/** Визальный вариант кнопки */
-enum Variant {
-  regular = 'regular',
-  round = 'round',
-}
-
 /** Типы пропсов */
 interface Props {
   /** Тип кнопки */
-  type?: Type;
+  type?: 'submit' | 'button' | 'reset';
   /** Визальный вариант кнопки */
-  variant?: Variant;
+  variant?: 'regular' | 'round';
   /** Используется ли темное оформление кнопки */
   isDarkStyle?: boolean;
 }
 
 /** Пропсы со значениями по умолчанию */
 const props = withDefaults(defineProps<Props>(), {
-  type: Type.button,
-  variant: Variant.regular,
+  type: 'button',
+  variant: 'round',
   isDarkStyle: false,
 });
 
@@ -33,8 +20,8 @@ const props = withDefaults(defineProps<Props>(), {
 const buttonClass = computed(() => {
   return {
     'button': true,
-    'button--variant--regular': props.variant === Variant.regular,
-    'button--variant--round': props.variant === Variant.round,
+    'button--variant--regular': props.variant === 'regular',
+    'button--variant--round': props.variant === 'round',
     'button--style--dark': props.isDarkStyle,
   };
 });
