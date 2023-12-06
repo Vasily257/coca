@@ -1,38 +1,23 @@
 {
+  "root": true,
   "env": {
     "browser": true,
     "es2021": true,
     "node": true
   },
-  "extends": [
-    "eslint:recommended",
-    "@vue/typescript/recommended",
-    "standard-with-typescript",
-    "plugin:vue/vue3-essential",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:nuxt/recommended"
-  ],
   "parser": "vue-eslint-parser",
   "parserOptions": {
+    "parser": "@typescript-eslint/parser",
     "ecmaVersion": 2021,
     "sourceType": "module",
-    "extraFileExtensions": [
-      ".vue"
-    ],
-    "project": [
-      "./tsconfig.json"
-    ]
+    "extraFileExtensions": [".vue"]
   },
-  "plugins": [
-    "vue"
-  ],
+  "extends": ["@nuxtjs/eslint-config-typescript", "plugin:prettier/recommended"],
   "rules": {
     "vue/multi-word-component-names": [
       "error",
       {
-        "ignores": [
-          "index"
-        ]
+        "ignores": ["index"]
       }
     ],
     "no-unused-vars": "off",
@@ -49,15 +34,5 @@
         "template": 100
       }
     ]
-  },
-  "settings": {
-    "import/resolver": {
-      "nuxt": {
-        "extensions": [
-          ".js",
-          ".vue"
-        ]
-      }
-    }
   }
 }

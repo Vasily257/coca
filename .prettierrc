@@ -1,9 +1,9 @@
 {
-	"printWidth": 100,
-	"singleQuote": true,
-	"quoteProps": "consistent",
-	"trailingComma": "all",
-	"bracketSpacing": true,
-	"arrowParens": "always",
-	"endOfLine": "auto"
+  "printWidth": 100,
+  "singleQuote": true,
+  "quoteProps": "consistent",
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "auto"
 }
