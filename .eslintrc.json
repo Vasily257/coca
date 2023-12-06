@@ -17,7 +17,13 @@
     "vue/multi-word-component-names": [
       "error",
       {
-        "ignores": ["index"]
+        "ignores": [
+          "index",
+          "blog",
+          "about",
+          "pricing",
+          "contact"
+        ]
       }
     ],
     "no-unused-vars": "off",
