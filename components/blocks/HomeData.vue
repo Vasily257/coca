@@ -1,16 +1,11 @@
 <script setup lang="ts">
-import BaseIcon from '~/components/base/BaseIcon.vue';
+import { BaseIcon } from '@/shared/ui';
 
 /** Типы пропсов */
-interface Props {
-  /** Путь к svg-спрайту */
-  svgSpritePath: string;
-}
+interface Props {}
 
 /** Пропсы со значениями по умолчанию */
-const props = withDefaults(defineProps<Props>(), {
-  svgSpritePath: '',
-});
+const props = withDefaults(defineProps<Props>(), {});
 
 /** Текст внутри блока «Контроль данных» */
 const dataControlText = [
@@ -61,11 +56,7 @@ const dataControlText = [
     </p>
     <ul class="home-data__control-list">
       <li v-for="(text, index) in dataControlText" :key="index" class="home-data__control-item">
-        <BaseIcon
-          :sprite-path="svgSpritePath"
-          :icon-name="text.icon"
-          class="home-data__control-icon"
-        />
+        <BaseIcon :icon-name="text.icon" class="home-data__control-icon" />
         <h3 class="home-data__control-title">{{ text.title }}</h3>
         <p class="home-data__control-description">{{ text.description }}</p>
       </li>

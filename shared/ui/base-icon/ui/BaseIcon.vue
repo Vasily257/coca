@@ -1,16 +1,20 @@
 <script setup lang="ts">
+import defaultSvgSprite from './assets/sprite.svg';
+
 /** Типы пропсов */
 interface Props {
   /** Путь к спрайту */
-  spritePath: string;
+  spritePath?: string;
   /** Название иконки */
-  iconName: string;
+  iconName?: string;
   /** Скрыть ли кнопку от скринридера */
   ariaHidden?: boolean;
 }
 
 /** Пропсы со значениями по умолчанию */
 const props = withDefaults(defineProps<Props>(), {
+  spritePath: defaultSvgSprite,
+  iconName: 'calendar',
   ariaHidden: true,
 });
 </script>

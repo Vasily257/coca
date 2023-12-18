@@ -1,18 +1,13 @@
 <script setup lang="ts">
 import BaseButton from '~/components/base/BaseButton.vue';
 import BaseInput from '~/components/base/BaseInput.vue';
-import BaseIcon from '~/components/base/BaseIcon.vue';
+import { BaseIcon } from '@/shared/ui';
 
 /** Типы пропсов */
-interface Props {
-  /** Путь к svg-спрайту */
-  svgSpritePath: string;
-}
+interface Props {}
 
 /** Пропсы со значениями по умолчанию */
-const props = withDefaults(defineProps<Props>(), {
-  svgSpritePath: '',
-});
+const props = withDefaults(defineProps<Props>(), {});
 
 /** Текст внутри блока «Бюджеты» */
 const budgetText = [
@@ -58,11 +53,7 @@ const budgetText = [
         <span class="home-main__budget-type">{{ text.budgetType }}</span>
         <span class="home-main__budget-amount">{{ text.amount }}</span>
         <p class="home-main__budget-change">
-          <BaseIcon
-            :sprite-path="svgSpritePath"
-            :icon-name="text.icon"
-            class="home-main__budget-change-icon"
-          />
+          <BaseIcon :icon-name="text.icon" class="home-main__budget-change-icon" />
           <span class="home-main__budget-change-value"> {{ text.changeValue }}</span>
           <span class="home-main__budget-change-period">from last year</span>
         </p>

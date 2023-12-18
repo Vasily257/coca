@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { svg } = useAppConfig();
+import { BaseIcon } from '~/shared/ui';
 
 /** Навигация */
 const navigationContent = [
@@ -30,7 +30,6 @@ const navigationContent = [
   <header>
     <BaseLink class="header__logo-link">
       <BaseIcon
-        :sprite-path="svg.spritePath"
         icon-name="logo"
         :aria-hidden="false"
         aria-label="website logo"
@@ -38,7 +37,7 @@ const navigationContent = [
       />
     </BaseLink>
     <BaseButton class="header__menu-button">
-      <BaseIcon :sprite-path="svg.spritePath" icon-name="burger-menu" class="header__menu-icon" />
+      <BaseIcon icon-name="burger-menu" class="header__menu-icon" />
     </BaseButton>
     <nav class="header__menu">
       <ul v-for="(content, index) in navigationContent" :key="index" class="header__menu-list">
