@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import BaseButton from '~/components/base/BaseButton.vue';
 import BaseInput from '~/components/base/BaseInput.vue';
-import { BaseIcon } from '@/shared/ui';
+import { BaseIcon, BaseButton } from '@/shared/ui';
 
 /** Типы пропсов */
 interface Props {}

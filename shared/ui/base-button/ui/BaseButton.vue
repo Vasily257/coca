@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { withDefaults, computed } from 'vue';
+
 /** Типы пропсов */
 interface Props {
   /** Тип кнопки */
