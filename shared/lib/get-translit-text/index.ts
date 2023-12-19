@@ -1,1 +1,1 @@
-export { getTranslitText } from './get-translit-text';
+export * from './get-translit-text';
