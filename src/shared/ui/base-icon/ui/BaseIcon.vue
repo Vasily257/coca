@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import defaultSvgSprite from './assets/sprite.svg';
+import defaultSvgSprite from '~/shared/ui/assets/svg/sprite.svg';
 
 /** Типы пропсов */
 interface Props {
