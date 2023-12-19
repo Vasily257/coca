@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { TheHeader } from '@/widgets';
+</script>
+
 <template>
   <div>
     <TheHeader />

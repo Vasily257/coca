@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BaseIcon, BaseButton, BaseLink } from '~/shared/ui';
+import { BaseIcon, BaseButton, BaseLink } from '@/shared/ui';
 
 /** Навигация */
 const navigationContent = [
