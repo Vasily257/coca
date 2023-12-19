@@ -20,6 +20,7 @@
         "ignores": ["index", "blog", "about", "pricing", "contact"]
       }
     ],
+    "vue/no-multiple-template-root": "off",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
