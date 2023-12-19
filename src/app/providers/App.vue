@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TheHeader } from '~/widgets/the-header';
+import { TheHeader } from '~/src/widgets/the-header';
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 <script setup>
-import HomeMain from '~/blocks/HomeMain.vue';
-import HomeData from '~/blocks/HomeData.vue';
+import HomeMain from '~/src/blocks/HomeMain.vue';
+import HomeData from '~/src/blocks/HomeData.vue';
 </script>
 
 <template>

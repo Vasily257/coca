@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BaseButton, BaseIcon, BaseInput } from '~/shared/ui';
+import { BaseButton, BaseIcon, BaseInput } from '~/src/shared/ui';
 
 /** Типы пропсов */
 interface Props {}
