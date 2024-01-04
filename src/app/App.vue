@@ -3,12 +3,10 @@ import { TheHeader } from '@/widgets/the-header';
 </script>
 
 <template>
-  <div>
-    <TheHeader />
-    <main class="main">
-      <NuxtPage />
-    </main>
-  </div>
+  <TheHeader />
+  <main class="main">
+    <NuxtPage />
+  </main>
 </template>
 
 <style lang="scss" scoped>
