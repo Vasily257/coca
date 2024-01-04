@@ -1,5 +1,5 @@
 <script setup>
-import { HomePage } from '~/src/pages/home';
+import { HomePage } from '@/pages/home';
 </script>
 
 <template>

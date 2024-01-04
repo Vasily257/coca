@@ -1,5 +1,5 @@
 <script setup>
-import { BaseIcon, BaseButton, BaseInput } from '~/src/shared/ui';
+import { BaseIcon, BaseButton, BaseInput } from '@/shared/ui';
 
 /** Текст внутри блока «Бюджеты» */
 const budgetText = [
