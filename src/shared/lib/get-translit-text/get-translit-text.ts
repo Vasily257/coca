@@ -1,5 +1,5 @@
 /** Словарь символов */
-const ruToEn = {
+const SYMBOL_DICTIONARY = {
   'а': 'a',
   'б': 'b',
   'в': 'v',
@@ -38,18 +38,14 @@ const ruToEn = {
 
 /**
  * Транслитерировать текст
- * @param text текст на русском или английском языке
- * @param target целевой язык транслитерации (ru, en)
+ * @param text текст на русском языке
+ * @returns транслитерированный текст из английских букв
  */
-export const getTranslitText = (text: string = '', target: 'ru' | 'en' = 'en') => {
+export const getTranslitText = (text: string = '') => {
   let newText = text;
 
-  Object.entries(ruToEn).forEach(([ru, en]) => {
-    if (target === 'en') {
-      newText = text.replace(new RegExp(ru, 'g'), en);
-    } else if (target === 'ru') {
-      newText = text.replace(new RegExp(en, 'g'), ru);
-    }
+  Object.entries(SYMBOL_DICTIONARY).forEach(([ru, en]) => {
+    newText = text.replace(new RegExp(ru, 'g'), en);
   });
 
   return newText;
