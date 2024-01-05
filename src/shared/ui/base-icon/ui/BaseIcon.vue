@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import defaultSvgSprite from '@/shared/ui/assets/svg/sprite.svg';
+import { svgSpritePath } from '@/shared/ui';
 
 /** Типы пропсов */
 interface Props {
@@ -12,8 +12,8 @@ interface Props {
 }
 
 /** Пропсы со значениями по умолчанию */
-const props = withDefaults(defineProps<Props>(), {
-  spritePath: defaultSvgSprite,
+withDefaults(defineProps<Props>(), {
+  spritePath: svgSpritePath || '',
   iconName: 'calendar',
   ariaHidden: true,
 });

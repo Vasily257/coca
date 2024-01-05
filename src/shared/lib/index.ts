@@ -1,1 +1,1 @@
-export * from './get-translit-text/get-translit-text';
+export * from './get-translit-text';

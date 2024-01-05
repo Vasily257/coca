@@ -6,7 +6,7 @@ interface Props {
 }
 
 /** Пропсы со значениями по умолчанию */
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
   to: '/',
 });
 </script>

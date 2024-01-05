@@ -1,1 +1,1 @@
-export { default as HomeMain } from './ui/HomeMain.vue';
+export * from './ui';
