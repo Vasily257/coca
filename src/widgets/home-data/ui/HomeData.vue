@@ -1,3 +1,22 @@
+<template>
+  <section class="home-data">
+    <h2 class="home-data__title">
+      Sans help our client solve complex customer problems with data that does more.
+    </h2>
+    <p class="home-data__description">
+      Our platform offers the modern enterprise full control of&nbsp;how data can be&nbsp;access and
+      used with industry leading software solutions for identity, activation and data collaboration
+    </p>
+    <ul class="home-data__control-list">
+      <li v-for="(text, index) in dataControlText" :key="index" class="home-data__control-item">
+        <BaseIcon :icon-name="text.icon" class="home-data__control-icon" />
+        <h3 class="home-data__control-title">{{ text.title }}</h3>
+        <p class="home-data__control-description">{{ text.description }}</p>
+      </li>
+    </ul>
+  </section>
+</template>
+
 <script setup lang="ts">
 import { BaseIcon } from '@/shared/ui';
 
@@ -38,24 +57,5 @@ const dataControlText = [
   },
 ];
 </script>
-
-<template>
-  <section class="home-data">
-    <h2 class="home-data__title">
-      Sans help our client solve complex customer problems with data that does more.
-    </h2>
-    <p class="home-data__description">
-      Our platform offers the modern enterprise full control of&nbsp;how data can be&nbsp;access and
-      used with industry leading software solutions for identity, activation and data collaboration
-    </p>
-    <ul class="home-data__control-list">
-      <li v-for="(text, index) in dataControlText" :key="index" class="home-data__control-item">
-        <BaseIcon :icon-name="text.icon" class="home-data__control-icon" />
-        <h3 class="home-data__control-title">{{ text.title }}</h3>
-        <p class="home-data__control-description">{{ text.description }}</p>
-      </li>
-    </ul>
-  </section>
-</template>
 
 <style lang="scss"></style>

@@ -1,3 +1,9 @@
+<template>
+  <svg class="icon" :aria-hidden="ariaHidden" role="img">
+    <use :xlink:href="`${spritePath}#${iconName}`" />
+  </svg>
+</template>
+
 <script setup lang="ts">
 import { svgSpritePath } from '@/shared/ui';
 
@@ -18,12 +24,6 @@ withDefaults(defineProps<Props>(), {
   ariaHidden: true,
 });
 </script>
-
-<template>
-  <svg class="icon" :aria-hidden="ariaHidden" role="img">
-    <use :xlink:href="`${spritePath}#${iconName}`" />
-  </svg>
-</template>
 
 <style lang="scss" scoped>
 .icon {

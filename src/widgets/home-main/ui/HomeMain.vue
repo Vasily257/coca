@@ -1,23 +1,3 @@
-<script setup lang="ts">
-import { BaseIcon, BaseButton, BaseInput } from '@/shared/ui';
-
-/** Текст внутри блока «Бюджеты» */
-const budgetText = [
-  {
-    budgetType: 'Sales',
-    amount: '$31,092',
-    icon: 'arrow-up',
-    changeValue: '4.2%',
-  },
-  {
-    budgetType: 'Marketing',
-    amount: '$29,128',
-    icon: 'arrow-down',
-    changeValue: '1.2%',
-  },
-];
-</script>
-
 <template>
   <section class="home-main">
     <h1 class="home-main__page-title">Digitally forward creative</h1>
@@ -53,5 +33,25 @@ const budgetText = [
     </ul>
   </section>
 </template>
+
+<script setup lang="ts">
+import { BaseIcon, BaseButton, BaseInput } from '@/shared/ui';
+
+/** Текст внутри блока «Бюджеты» */
+const budgetText = [
+  {
+    budgetType: 'Sales',
+    amount: '$31,092',
+    icon: 'arrow-up',
+    changeValue: '4.2%',
+  },
+  {
+    budgetType: 'Marketing',
+    amount: '$29,128',
+    icon: 'arrow-down',
+    changeValue: '1.2%',
+  },
+];
+</script>
 
 <style lang="scss"></style>

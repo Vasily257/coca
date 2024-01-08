@@ -1,3 +1,9 @@
+<template>
+  <button :type="type" :class="buttonClass">
+    <slot>Нажать</slot>
+  </button>
+</template>
+
 <script setup lang="ts">
 import { withDefaults, computed } from 'vue';
 
@@ -28,12 +34,6 @@ const buttonClass = computed(() => {
   };
 });
 </script>
-
-<template>
-  <button :type="type" :class="buttonClass">
-    <slot>Нажать</slot>
-  </button>
-</template>
 
 <style lang="scss" scoped>
 .button {

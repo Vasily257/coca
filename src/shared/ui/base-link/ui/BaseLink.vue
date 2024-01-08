@@ -1,3 +1,9 @@
+<template>
+  <NuxtLink :to="to" class="link">
+    <slot></slot>
+  </NuxtLink>
+</template>
+
 <script setup lang="ts">
 /** Типы пропсов */
 interface Props {
@@ -10,12 +16,6 @@ withDefaults(defineProps<Props>(), {
   to: '/',
 });
 </script>
-
-<template>
-  <NuxtLink :to="to" class="link">
-    <slot></slot>
-  </NuxtLink>
-</template>
 
 <style lang="scss" scoped>
 .link {

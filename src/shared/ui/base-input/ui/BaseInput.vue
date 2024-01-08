@@ -1,3 +1,26 @@
+<template>
+  <div class="wrapper">
+    <label v-if="labelText" :for="id" :class="[labelClass, props.labelOuterClass]">
+      {{ labelText }}
+    </label>
+    <input
+      :id="id"
+      :name="name"
+      :type="type"
+      :value="modelValue"
+      :placeholder="placeholder"
+      :autocomplete="autocomplete"
+      :pattern="pattern"
+      :required="isRequired"
+      :class="[inputClass, props.inputOuterClass]"
+      @input="handleInput"
+      @focusin="handleFocusIn"
+      @focusout="handleFocusOut"
+    />
+    <span v-if="props.isErrorShown" class="error-text">{{ errorText }}</span>
+  </div>
+</template>
+
 <script setup lang="ts">
 import { computed } from 'vue';
 
@@ -95,29 +118,6 @@ const handleInput = (event: Event) => {
   }
 };
 </script>
-
-<template>
-  <div class="wrapper">
-    <label v-if="labelText" :for="id" :class="[labelClass, props.labelOuterClass]">
-      {{ labelText }}
-    </label>
-    <input
-      :id="id"
-      :name="name"
-      :type="type"
-      :value="modelValue"
-      :placeholder="placeholder"
-      :autocomplete="autocomplete"
-      :pattern="pattern"
-      :required="isRequired"
-      :class="[inputClass, props.inputOuterClass]"
-      @input="handleInput"
-      @focusin="handleFocusIn"
-      @focusout="handleFocusOut"
-    />
-    <span v-if="props.isErrorShown" class="error-text">{{ errorText }}</span>
-  </div>
-</template>
 
 <style lang="scss" scoped>
 .wrapper {

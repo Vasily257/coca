@@ -1,3 +1,24 @@
+<template>
+  <section class="home-strength">
+    <ul class="home-strength__list">
+      <li v-for="(indicator, index) in indicators" :key="index" class="home-strength__item">
+        <h3 class="home-strength__item-title">{{ indicator.value }}</h3>
+        <p class="home-strength__item-description">{{ indicator.text }}</p>
+      </li>
+    </ul>
+    <picture>
+      <img class="home-strength__image" :src="teamPng" height="162" width="335" alt="team" />
+    </picture>
+    <h2 class="home-strength__title">
+      Drive sustainable growth with personal and engaging experiences
+    </h2>
+    <p class="home-strength__description">
+      To&nbsp;build software that gives customer facing teams in&nbsp;small and medium-sized
+      businesses the ability to&nbsp;create rewarding and long-lasting relationships with customers
+    </p>
+  </section>
+</template>
+
 <script setup lang="ts">
 import { teamPng } from './images';
 
@@ -21,26 +42,5 @@ const indicators = [
   },
 ];
 </script>
-
-<template>
-  <section class="home-strength">
-    <ul class="home-strength__list">
-      <li v-for="(indicator, index) in indicators" :key="index" class="home-strength__item">
-        <h3 class="home-strength__item-title">{{ indicator.value }}</h3>
-        <p class="home-strength__item-description">{{ indicator.text }}</p>
-      </li>
-    </ul>
-    <picture>
-      <img class="home-strength__image" :src="teamPng" height="162" width="335" alt="team" />
-    </picture>
-    <h2 class="home-strength__title">
-      Drive sustainable growth with personal and engaging experiences
-    </h2>
-    <p class="home-strength__description">
-      To&nbsp;build software that gives customer facing teams in&nbsp;small and medium-sized
-      businesses the ability to&nbsp;create rewarding and long-lasting relationships with customers
-    </p>
-  </section>
-</template>
 
 <style lang="scss"></style>

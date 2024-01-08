@@ -1,3 +1,31 @@
+<!-- eslint-disable vue/no-v-html -->
+<template>
+  <section class="home-relations">
+    <h2 class="home-relations__title">890+</h2>
+    <p class="home-relations__description">
+      some big companies that we&nbsp;work with, and trust&nbsp;us very much
+    </p>
+    <ul class="home-relations__list">
+      <li v-for="(contentItem, index) in CONTENT_OF_LIST" :key="index" class="home-relations__item">
+        <picture>
+          <img
+            :src="contentItem.picturePath"
+            :alt="contentItem.altText"
+            class="home-relations__image"
+          />
+        </picture>
+        <BaseIcon
+          :icon-name="contentItem.iconName"
+          :sprite-path="spritePath"
+          class="home-relations__icon"
+        />
+        <h2 class="home-relations__title" v-html="contentItem.title" />
+        <p class="home-relations__desc" v-html="contentItem.desc" />
+      </li>
+    </ul>
+  </section>
+</template>
+
 <script setup lang="ts">
 import { BaseIcon } from '@/shared/ui';
 import { spritePath } from './icons';
@@ -43,33 +71,5 @@ const CONTENT_OF_LIST = [
   },
 ];
 </script>
-
-<!-- eslint-disable vue/no-v-html -->
-<template>
-  <section class="home-relations">
-    <h2 class="home-relations__title">890+</h2>
-    <p class="home-relations__description">
-      some big companies that we&nbsp;work with, and trust&nbsp;us very much
-    </p>
-    <ul class="home-relations__list">
-      <li v-for="(contentItem, index) in CONTENT_OF_LIST" :key="index" class="home-relations__item">
-        <picture>
-          <img
-            :src="contentItem.picturePath"
-            :alt="contentItem.altText"
-            class="home-relations__image"
-          />
-        </picture>
-        <BaseIcon
-          :icon-name="contentItem.iconName"
-          :sprite-path="spritePath"
-          class="home-relations__icon"
-        />
-        <h2 class="home-relations__title" v-html="contentItem.title" />
-        <p class="home-relations__desc" v-html="contentItem.desc" />
-      </li>
-    </ul>
-  </section>
-</template>
 
 <style lang="scss"></style>
