@@ -3,6 +3,7 @@ import { HomeData } from '@/widgets/home-data';
 import { HomeFeatures } from '@/widgets/home-features';
 import { HomeMain } from '@/widgets/home-main';
 import { HomePartners } from '@/widgets/home-partners';
+import { HomeRelations } from '@/widgets/home-relations';
 import { HomeStrength } from '@/widgets/home-strength';
 </script>
 
@@ -12,4 +13,5 @@ import { HomeStrength } from '@/widgets/home-strength';
   <HomeFeatures />
   <HomeStrength />
   <HomePartners />
+  <HomeRelations />
 </template>
