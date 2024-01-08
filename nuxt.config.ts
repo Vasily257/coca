@@ -8,4 +8,7 @@ export default defineNuxtConfig({
   alias: {
     '@': resolve(__dirname, './src'),
   },
+  imports: {
+    autoImport: false,
+  },
 });
