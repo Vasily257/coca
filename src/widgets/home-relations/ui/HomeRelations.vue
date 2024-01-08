@@ -2,25 +2,25 @@
 <template>
   <section class="home-relations">
     <h2 class="home-relations__title">890+</h2>
-    <p class="home-relations__description">
+    <p class="home-relations__desc">
       some big companies that we&nbsp;work with, and trust&nbsp;us very much
     </p>
     <ul class="home-relations__list">
-      <li v-for="(contentItem, index) in CONTENT_OF_LIST" :key="index" class="home-relations__item">
+      <li v-for="(contentItem, index) in LIST_OF_CONTENT" :key="index" class="home-relations__item">
         <picture>
           <img
             :src="contentItem.picturePath"
             :alt="contentItem.altText"
-            class="home-relations__image"
+            class="home-relations__item-image"
           />
         </picture>
         <BaseIcon
           :icon-name="contentItem.iconName"
           :sprite-path="spritePath"
-          class="home-relations__icon"
+          class="home-relations__item-icon"
         />
-        <h2 class="home-relations__title" v-html="contentItem.title" />
-        <p class="home-relations__desc" v-html="contentItem.desc" />
+        <h2 class="home-relations__item-title" v-html="contentItem.title" />
+        <p class="home-relations__item-desc" v-html="contentItem.desc" />
       </li>
     </ul>
   </section>
@@ -31,8 +31,8 @@ import { BaseIcon } from '@/shared/ui';
 import { spritePath } from './icons';
 import { assistancePng, meetingPng, speechPng, teamSupportPng } from './images';
 
-/** Содержимое списка */
-const CONTENT_OF_LIST = [
+/** Список контента */
+const LIST_OF_CONTENT = [
   {
     picturePath: assistancePng,
     altText: 'a man helps a woman',

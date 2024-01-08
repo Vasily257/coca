@@ -1,9 +1,9 @@
 <template>
   <section class="home-strength">
     <ul class="home-strength__list">
-      <li v-for="(indicator, index) in indicators" :key="index" class="home-strength__item">
-        <h3 class="home-strength__item-title">{{ indicator.value }}</h3>
-        <p class="home-strength__item-description">{{ indicator.text }}</p>
+      <li v-for="(contentItem, index) in LIST_OF_CONTENT" :key="index" class="home-strength__item">
+        <h3 class="home-strength__item-title">{{ contentItem.title }}</h3>
+        <p class="home-strength__item-desc">{{ contentItem.desc }}</p>
       </li>
     </ul>
     <picture>
@@ -12,7 +12,7 @@
     <h2 class="home-strength__title">
       Drive sustainable growth with personal and engaging experiences
     </h2>
-    <p class="home-strength__description">
+    <p class="home-strength__desc">
       To&nbsp;build software that gives customer facing teams in&nbsp;small and medium-sized
       businesses the ability to&nbsp;create rewarding and long-lasting relationships with customers
     </p>
@@ -22,23 +22,23 @@
 <script setup lang="ts">
 import { teamPng } from './images';
 
-/** Показатели */
-const indicators = [
+/** Список контента */
+const LIST_OF_CONTENT = [
   {
-    value: '17k',
-    text: 'Happy customers on worldwide',
+    title: '17k',
+    desc: 'Happy customers on worldwide',
   },
   {
-    value: '15+',
-    text: 'Hours of work experience',
+    title: '15+',
+    desc: 'Hours of work experience',
   },
   {
-    value: '50+',
-    text: 'Creativity & passionate members',
+    title: '50+',
+    desc: 'Creativity & passionate members',
   },
   {
-    value: '100+',
-    text: 'Integrations lorem ipsum integrations',
+    title: '100+',
+    desc: 'Integrations lorem ipsum integrations',
   },
 ];
 </script>

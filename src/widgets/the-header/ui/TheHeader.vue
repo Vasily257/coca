@@ -11,10 +11,10 @@
     <BaseButton class="header__menu-button">
       <BaseIcon icon-name="burger-menu" class="header__menu-icon" />
     </BaseButton>
-    <nav class="header__menu">
-      <ul v-for="(content, index) in navigationContent" :key="index" class="header__menu-list">
-        <li class="header__menu-item">
-          <BaseLink :to="content.link" class="header__menu-link">
+    <nav class="header__nav">
+      <ul v-for="(content, index) in navigationContent" :key="index" class="header__list">
+        <li class="header__item">
+          <BaseLink :to="content.link" class="header__item-link">
             {{ content.text }}
           </BaseLink>
         </li>
