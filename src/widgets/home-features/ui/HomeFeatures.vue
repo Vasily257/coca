@@ -1,14 +1,14 @@
 <template>
   <section class="home-features">
-    <NuxtPicture
-      class="home-features__image"
-      format="avif,webp"
-      src="/img/home-features.png"
-      quality="85"
-      height="374"
-      width="335"
-      alt="working on a computer"
-    />
+    <picture>
+      <img
+        :src="workplacePng"
+        height="374"
+        width="335"
+        alt="a workplace with a computer"
+        class="home-features__image"
+      />
+    </picture>
     <h2 class="home-features__title">
       Passion to&nbsp;increase company revenue up&nbsp;to&nbsp;85%
     </h2>
@@ -27,6 +27,7 @@
 
 <script setup lang="ts">
 import { BaseIcon } from '@/shared/ui';
+import { workplacePng } from './images';
 
 /** Список контента */
 const LIST_OF_CONTENT = [

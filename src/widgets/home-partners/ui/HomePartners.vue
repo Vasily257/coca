@@ -6,9 +6,10 @@
     </p>
     <ul class="home-partners__list">
       <li v-for="(itemContent, index) in LIST_OF_CONTENT" :key="index" class="home-partners__item">
-        <img
-          :src="itemContent.iconPath"
-          :alt="itemContent.altText"
+        <BaseIcon
+          :icon-name="itemContent.iconName"
+          :sprite-path="spritePath"
+          :aria-label="itemContent.altText"
           class="home-partners__item-image"
         />
       </li>
@@ -17,27 +18,19 @@
 </template>
 
 <script setup lang="ts">
-import {
-  airbnbIcon,
-  amazonIcon,
-  fedExIcon,
-  googleIcon,
-  microsoftIcon,
-  olaIcon,
-  oyoIcon,
-  walmartIcon,
-} from './icons';
+import { BaseIcon } from '@/shared/ui';
+import { spritePath } from './icons';
 
 /** Список контента */
 const LIST_OF_CONTENT = [
-  { iconPath: airbnbIcon, altText: 'airbnb logo' },
-  { iconPath: amazonIcon, altText: 'amazon logo' },
-  { iconPath: fedExIcon, altText: 'fedex logo' },
-  { iconPath: microsoftIcon, altText: 'microsoft logo' },
-  { iconPath: oyoIcon, altText: 'oyo logo' },
-  { iconPath: walmartIcon, altText: 'walmart logo' },
-  { iconPath: googleIcon, altText: 'google logo' },
-  { iconPath: olaIcon, altText: 'ola logo' },
+  { iconName: 'airbnb', altText: 'the Airbnb logo' },
+  { iconName: 'amazon', altText: 'the Amazon logo' },
+  { iconName: 'fed-ex', altText: 'the FedEx logo' },
+  { iconName: 'microsoft', altText: 'the Microsoft logo' },
+  { iconName: 'oyo', altText: 'the Oyo logo' },
+  { iconName: 'walmart', altText: 'the Walmart logo' },
+  { iconName: 'google', altText: 'the Google logo' },
+  { iconName: 'ola', altText: 'the Ola logo' },
 ];
 </script>
 
