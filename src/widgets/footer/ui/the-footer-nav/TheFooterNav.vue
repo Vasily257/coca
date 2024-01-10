@@ -1,6 +1,6 @@
 <template>
   <div class="footer-nav">
-    <BaseIcon icon-name="logo" class="footer-nav__logo" />
+    <BaseIcon name="logo" class="footer-nav__logo" />
     <p class="footer-nav__desc">
       We&nbsp;built an&nbsp;elegant solution. Our team created a&nbsp;fully integrated sales and
       marketing solution for SMBs
@@ -9,7 +9,7 @@
     <!-- Социальные сети -->
     <ul class="footer-nav__socials">
       <li v-for="(socialName, index) in SOCIAL_NAMES" :key="index" class="footer-nav__social">
-        <BaseIcon :icon-name="socialName" :sprite-path="spritePath" />
+        <BaseIcon :name="socialName" :sprite-path="spritePath" />
       </li>
     </ul>
 

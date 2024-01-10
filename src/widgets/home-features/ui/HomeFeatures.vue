@@ -18,7 +18,7 @@
     </p>
     <ul class="home-features__list">
       <li v-for="(contentItem, index) in LIST_OF_CONTENT" :key="index" class="home-features__item">
-        <BaseIcon icon-name="check-mark" class="home-features__item-icon" />
+        <BaseIcon name="check-mark" class="home-features__item-icon" />
         <p class="home-features__item-icon">{{ contentItem }}</p>
       </li>
     </ul>

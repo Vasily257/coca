@@ -6,11 +6,11 @@
     </p>
     <ul class="home-reviews__list">
       <li v-for="(contentItem, index) in LIST_OF_CONTENT" :key="index" class="home-reviews__item">
-        <BaseIcon icon-name="quote" :sprite-path="spritePath" />
+        <BaseIcon name="quote" :sprite-path="spritePath" />
         <div>
           <ul v-for="score in contentItem.rating" :key="score">
             <li>
-              <BaseIcon icon-name="star" :sprite-path="spritePath" />
+              <BaseIcon name="star" :sprite-path="spritePath" />
             </li>
           </ul>
 

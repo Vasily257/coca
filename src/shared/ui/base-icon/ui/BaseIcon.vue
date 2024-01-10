@@ -1,6 +1,6 @@
 <template>
   <svg class="icon" :aria-hidden="ariaHidden" role="img">
-    <use :xlink:href="`${spritePath}#${iconName}`" />
+    <use :xlink:href="`${spritePath}#${name}`" />
   </svg>
 </template>
 
@@ -9,18 +9,18 @@ import { svgSpritePath } from '@/shared/ui';
 
 /** Типы пропсов */
 interface Props {
-  /** Путь к спрайту */
-  spritePath?: string;
   /** Название иконки */
-  iconName?: string;
-  /** Скрыть ли кнопку от скринридера */
+  name?: string;
+  /** Путь к спрайту с иконками */
+  spritePath?: string;
+  /** Скрыть ли иконку от скринридера */
   ariaHidden?: boolean;
 }
 
 /** Пропсы со значениями по умолчанию */
 withDefaults(defineProps<Props>(), {
   spritePath: svgSpritePath || '',
-  iconName: 'calendar',
+  name: 'logo',
   ariaHidden: true,
 });
 </script>

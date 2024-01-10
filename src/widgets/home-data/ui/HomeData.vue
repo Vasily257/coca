@@ -9,7 +9,7 @@
     </p>
     <ul class="home-data__list">
       <li v-for="(contentItem, index) in LIST_OF_CONTENT" :key="index" class="home-data__item">
-        <BaseIcon :icon-name="contentItem.iconName" class="home-data__item-icon" />
+        <BaseIcon :name="contentItem.iconName" class="home-data__item-icon" />
         <h3 class="home-data__item-title">{{ contentItem.title }}</h3>
         <p class="home-data__item-desc">{{ contentItem.desc }}</p>
       </li>

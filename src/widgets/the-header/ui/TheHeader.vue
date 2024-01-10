@@ -2,14 +2,14 @@
   <header>
     <BaseLink class="header__logo-link">
       <BaseIcon
-        icon-name="logo"
+        name="logo"
         :aria-hidden="false"
         aria-label="website logo"
         class="header__logo-icon"
       />
     </BaseLink>
     <BaseButton class="header__menu-button">
-      <BaseIcon icon-name="burger-menu" class="header__menu-icon" />
+      <BaseIcon name="burger-menu" class="header__menu-icon" />
     </BaseButton>
     <nav class="header__nav">
       <ul v-for="(content, index) in navigationContent" :key="index" class="header__list">

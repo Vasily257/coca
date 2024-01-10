@@ -15,7 +15,7 @@
           />
         </picture>
         <BaseIcon
-          :icon-name="contentItem.iconName"
+          :name="contentItem.iconName"
           :sprite-path="spritePath"
           class="home-relations__item-icon"
         />

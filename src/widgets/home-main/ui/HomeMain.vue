@@ -25,7 +25,7 @@
         <span class="home-main__item-type">{{ contentItem.budgetType }}</span>
         <span class="home-main__item-amount">{{ contentItem.amount }}</span>
         <p class="home-main__item-change">
-          <BaseIcon :icon-name="contentItem.iconName" class="home-main__item-change-icon" />
+          <BaseIcon :name="contentItem.iconName" class="home-main__item-change-icon" />
           <span class="home-main__item-change-value"> {{ contentItem.changeValue }}</span>
           <span class="home-main__item-change-period">from last year</span>
         </p>

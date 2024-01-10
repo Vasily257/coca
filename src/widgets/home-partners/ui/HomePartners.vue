@@ -7,7 +7,7 @@
     <ul class="home-partners__list">
       <li v-for="(itemContent, index) in LIST_OF_CONTENT" :key="index" class="home-partners__item">
         <BaseIcon
-          :icon-name="itemContent.iconName"
+          :name="itemContent.iconName"
           :sprite-path="spritePath"
           :aria-label="itemContent.altText"
           class="home-partners__item-image"
