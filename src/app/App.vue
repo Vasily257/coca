@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { TheFooter } from '@/widgets/footer';
+import { TheFooter } from '@/widgets/the-footer';
 import { TheHeader } from '@/widgets/the-header';
 </script>
 
