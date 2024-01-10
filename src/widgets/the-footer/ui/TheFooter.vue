@@ -67,9 +67,9 @@ const SOCIAL_NAMES = ['facebook', 'x', 'instagram', 'linkedin'];
 
 /** Навигации для мобильного вида */
 const MOBILE_NAV = [
-  { text: 'Privacy Policy', href: '/privacy-policy' },
-  { text: 'Terms & Conditions', href: '/terms-and-conditions' },
-  { text: 'Support', href: '/support' },
+  { text: 'Privacy Policy', href: '' },
+  { text: 'Terms & Conditions', href: '' },
+  { text: 'Support', href: '' },
 ];
 
 /** Навигации для декстопного вида */
@@ -79,35 +79,35 @@ const DESKTOP_NAV = [
     links: [
       { text: 'About', href: '/about' },
       { text: 'Pricing', href: '/pricing' },
-      { text: 'Jobs', href: '/jobs' },
+      { text: 'Jobs', href: '' },
       { text: 'Blog', href: '/blog' },
     ],
   },
   {
     title: 'Product',
     links: [
-      { text: 'Sales Software', href: '/sales-software' },
-      { text: 'Marketplace', href: '/marketplace' },
-      { text: 'Terms & Conditions', href: '/terms-and-conditions' },
-      { text: 'Privacy Policy', href: '/privacy-policy' },
+      { text: 'Sales Software', href: '' },
+      { text: 'Marketplace', href: '' },
+      { text: 'Terms & Conditions', href: '' },
+      { text: 'Privacy Policy', href: '' },
     ],
   },
   {
     title: 'Company',
     links: [
-      { text: 'CRM Comparision', href: '/crm-comparision' },
-      { text: 'Partner Program', href: '/partner-program' },
-      { text: 'What is CRM', href: '/what-is-crm' },
-      { text: 'Resource', href: '/resource' },
+      { text: 'CRM Comparision', href: '' },
+      { text: 'Partner Program', href: '' },
+      { text: 'What is CRM', href: '' },
+      { text: 'Resource', href: '' },
     ],
   },
   {
     title: 'Help Center',
     links: [
-      { text: 'Community', href: '/community' },
-      { text: 'Knowledge Base', href: '/knowledge' },
-      { text: 'Academy', href: '/academy' },
-      { text: 'Support', href: '/support' },
+      { text: 'Community', href: '' },
+      { text: 'Knowledge Base', href: '' },
+      { text: 'Academy', href: '' },
+      { text: 'Support', href: '' },
     ],
   },
 ];
