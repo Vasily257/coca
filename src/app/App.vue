@@ -3,9 +3,11 @@
   <main class="main">
     <NuxtPage />
   </main>
+  <TheFooter />
 </template>
 
 <script setup lang="ts">
+import { TheFooter } from '@/widgets/footer';
 import { TheHeader } from '@/widgets/the-header';
 </script>
 
