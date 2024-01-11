@@ -17,8 +17,9 @@ export default defineNuxtConfig({
       modules: {
         generateScopedName: (name, filename, css) => {
           const fullName = basename(filename);
-          const componentName = fullName.split('.vue')[0];
-          const hash = crypto.createHash('md5').update(css).digest('hex').slice(0, 8);
+          const componentName = fullName.split('.vue')[0] || '';
+
+          const hash = crypto.createHash('md5').update(css).digest('hex').slice(0, 5);
 
           return componentName + '__' + name + '__' + hash;
         },
