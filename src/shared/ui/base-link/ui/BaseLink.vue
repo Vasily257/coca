@@ -1,10 +1,12 @@
 <template>
-  <NuxtLink :to="to" class="link">
+  <NuxtLink :to="to" :class="classes.link">
     <slot></slot>
   </NuxtLink>
 </template>
 
 <script setup lang="ts">
+import { useCssModule } from 'vue';
+
 /** Типы пропсов */
 interface Props {
   /** Адрес, по которому нужно перейти */
@@ -15,9 +17,12 @@ interface Props {
 withDefaults(defineProps<Props>(), {
   to: '/',
 });
+
+/** CSS-классы */
+const classes = useCssModule();
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" module>
 .link {
   text-decoration: none;
   color: inherit;

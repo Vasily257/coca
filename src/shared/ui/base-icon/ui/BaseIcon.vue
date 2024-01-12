@@ -1,10 +1,11 @@
 <template>
-  <svg class="icon" :aria-hidden="ariaHidden" role="img">
+  <svg :class="classes.icon" :aria-hidden="ariaHidden" role="img">
     <use :xlink:href="`${spritePath}#${name}`" />
   </svg>
 </template>
 
 <script setup lang="ts">
+import { useCssModule } from 'vue';
 import { svgSpritePath } from '@/shared/ui';
 
 /** Типы пропсов */
@@ -23,9 +24,12 @@ withDefaults(defineProps<Props>(), {
   name: 'logo',
   ariaHidden: true,
 });
+
+/** CSS-классы */
+const classes = useCssModule();
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" module>
 .icon {
   flex-shrink: 0;
   width: 16px;
