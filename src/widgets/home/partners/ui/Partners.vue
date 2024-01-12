@@ -9,6 +9,7 @@
         <BaseIcon
           :name="itemContent.iconName"
           :sprite-path="spritePath"
+          :aria-hidden="false"
           :aria-label="itemContent.altText"
           class="home-partners__item-image"
         />
