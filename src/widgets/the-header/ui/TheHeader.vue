@@ -99,6 +99,7 @@ const LIST_OF_CONTENT = [
 .menuButton {
   min-height: 52px;
   padding: 0;
+  padding-bottom: 4px;
   border: none;
 
   &:hover {
