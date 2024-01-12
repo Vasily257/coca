@@ -1,5 +1,5 @@
 <template>
-  <button :class="buttonClass">
+  <button :type="type" :class="buttonClass">
     <slot>Нажать</slot>
   </button>
 </template>
@@ -9,6 +9,8 @@ import { withDefaults, useCssModule, computed } from 'vue';
 
 /** Типы пропсов */
 interface Props {
+  /** Тип кнопки */
+  type: 'submit' | 'button' | 'reset';
   /** Визальный вариант кнопки */
   variant?: 'regular' | 'round';
   /** Используется ли темное оформление кнопки */
