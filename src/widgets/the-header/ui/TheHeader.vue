@@ -32,6 +32,7 @@
 
 <script setup lang="ts">
 import { useCssModule } from 'vue';
+import { PageRoute } from '@/shared/lib';
 import { BaseIcon, BaseButton, BaseLink } from '@/shared/ui';
 
 /** CSS-классы */
@@ -41,23 +42,23 @@ const classes = useCssModule();
 const LIST_OF_CONTENT = [
   {
     text: 'Home',
-    href: '/',
+    href: PageRoute.Home,
   },
   {
     text: 'About',
-    href: '/about',
+    href: PageRoute.About,
   },
   {
     text: 'Blog',
-    href: '/blog',
+    href: PageRoute.Blog,
   },
   {
     text: 'Pricing',
-    href: '/pricing',
+    href: PageRoute.Pricing,
   },
   {
     text: 'Contact Us ->',
-    href: '/contact',
+    href: PageRoute.Contact,
   },
 ];
 </script>
@@ -69,14 +70,14 @@ const LIST_OF_CONTENT = [
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 24px 20px 32px;
+  padding: 24px 20px 0;
 
   @media screen and (min-width: 768px) {
-    padding: 26px 60px 22px;
+    padding: 26px 60px 0;
   }
 
   @media screen and (min-width: 1024px) {
-    padding: 26px 120px 22px;
+    padding: 26px 120px 0;
   }
 }
 
