@@ -10,7 +10,7 @@ import { withDefaults, useCssModule, computed } from 'vue';
 /** Типы пропсов */
 interface Props {
   /** Тип кнопки */
-  type: 'submit' | 'button' | 'reset';
+  type?: 'submit' | 'button' | 'reset';
   /** Визальный вариант кнопки */
   variant?: 'regular' | 'round';
   /** Используется ли темное оформление кнопки */
