@@ -1,5 +1,5 @@
 <template>
-  <button :type="type" :class="classes.button">
+  <button :type="type" :class="classes.base">
     <slot></slot>
   </button>
 </template>
@@ -23,29 +23,22 @@ const classes = useCssModule();
 </script>
 
 <style lang="scss" module>
-.button {
+.base {
+  position: relative;
   display: inline-flex;
-  justify-content: space-between;
+  overflow: hidden;
   align-items: center;
-  gap: 4px;
   box-sizing: border-box;
-  width: fit-content;
-  padding: 0;
+  background-color: transparent;
+  color: inherit;
   cursor: pointer;
+  user-select: none;
   text-align: center;
-  text-transform: inherit;
-  color: var(--neutral-dark, #1d1e25);
-  border-width: 1px;
-  border-style: solid;
-  border-color: transparent;
-  background-color: var(--neutral-white, #ffffff);
-  font: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
+  vertical-align: bottom;
+  border: 1px solid transparent;
 
   &:hover {
-    background-color: var(--neutral-light, #f5f5f5);
+    background-color: transparent;
   }
 
   &:focus {

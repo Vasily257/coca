@@ -1,12 +1,12 @@
 <template>
-  <BaseButton :type="type" :class="textButtonClass">
-    <slot>Нажать</slot>
+  <BaseButton :type="type" :class="rootClass">
+    <slot></slot>
   </BaseButton>
 </template>
 
 <script setup lang="ts">
 import { type ButtonHTMLAttributes, withDefaults, useCssModule, computed } from 'vue';
-import { BaseButton } from '../../base';
+import { BaseButton } from '@/shared/ui/button';
 
 /** Типы пропсов */
 interface Props {
@@ -26,22 +26,28 @@ const props = withDefaults(defineProps<Props>(), {
 const classes = useCssModule();
 
 /** CSS-классы для кнопки */
-const textButtonClass = computed(() => {
+const rootClass = computed(() => {
   return {
-    [classes.textButton]: true,
-    [classes.textButtonStyleDark]: props.isDarkStyle,
+    [classes.regular]: true,
+    [classes.regularStyleDark]: props.isDarkStyle,
   };
 });
 </script>
 
 <style lang="scss" module>
-.textButton {
+.regular {
   min-height: 36px;
   padding: 0 16px;
+  color: var(--neutral-dark, #1d1e25);
   border-radius: 36px;
+  background-color: var(--neutral-white, #ffffff);
   font-size: 12px;
   font-weight: 700;
   line-height: 36px;
+
+  &:hover {
+    background-color: var(--neutral-light, #f5f5f5);
+  }
 
   &StyleDark {
     color: var(--neutral-white, #ffffff);
