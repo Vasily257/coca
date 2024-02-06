@@ -12,6 +12,8 @@ import { TheFooter } from '@/widgets/the-footer';
 import { TheHeader } from '@/widgets/the-header';
 import { usePage } from '@/shared/lib';
 
+import '@/app/styles/index.scss';
+
 const { isHomePage } = usePage();
 
 /** CSS-классы */
