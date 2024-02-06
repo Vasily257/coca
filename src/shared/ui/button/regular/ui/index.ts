@@ -1,1 +1,1 @@
-export { default as RegularButton } from './Button.vue';
+export { default as RegularButton } from './RegularButton.vue';

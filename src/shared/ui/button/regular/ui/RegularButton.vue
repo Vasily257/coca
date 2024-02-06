@@ -28,14 +28,14 @@ const classes = useCssModule();
 /** CSS-классы для кнопки */
 const rootClass = computed(() => {
   return {
-    [classes.regular]: true,
-    [classes.regularStyleDark]: props.isDarkStyle,
+    [classes.regularButton]: true,
+    [classes.regularButtonStyleDark]: props.isDarkStyle,
   };
 });
 </script>
 
 <style lang="scss" module>
-.regular {
+.regularButton {
   min-height: 36px;
   padding: 0 16px;
   color: var(--neutral-dark, #1d1e25);

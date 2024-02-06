@@ -1,5 +1,5 @@
 <template>
-  <button :type="type" :class="classes.base">
+  <button :type="type" :class="classes.baseButton">
     <slot></slot>
   </button>
 </template>
@@ -23,7 +23,7 @@ const classes = useCssModule();
 </script>
 
 <style lang="scss" module>
-.base {
+.baseButton {
   position: relative;
   display: inline-flex;
   overflow: hidden;
