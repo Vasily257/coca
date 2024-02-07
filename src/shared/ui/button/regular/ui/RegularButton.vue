@@ -36,14 +36,15 @@ const rootClass = computed(() => {
 
 <style lang="scss" module>
 .regularButton {
-  min-height: 36px;
-  padding: 0 16px;
+  min-height: 34px;
+  padding: 0 22px 0 21px;
   color: var(--neutral-dark, #1d1e25);
-  border-radius: 36px;
+  border-radius: 34px;
   background-color: var(--neutral-white, #ffffff);
   font-size: 12px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 34px;
+  flex-shrink: 0;
 
   &:hover {
     background-color: var(--neutral-light, #f5f5f5);

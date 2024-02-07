@@ -1,1 +1,1 @@
-export { default as HomeTop } from './Top.vue';
+export { default as HomeTop } from './HomeTop.vue';
